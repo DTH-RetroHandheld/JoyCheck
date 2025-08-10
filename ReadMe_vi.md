@@ -1,3 +1,9 @@
+<div align="center">
+    <img src="https://github.com/DTH-RetroHandheld/imgh/blob/joycheck/IMG_6223.jpg?raw=true">
+    
+_Best app for check your Retro Handheld input_  
+</div>
+
 # JoyCheck (PortMaster)
 
 Trình kiểm tra tay cầm cho máy chơi game cầm tay Linux chạy **PortMaster**. Hiển thị trạng thái nút, trục và D-Pad theo thời gian thực. Dùng để test nhanh sau khi map phím hoặc đổi tay cầm.
