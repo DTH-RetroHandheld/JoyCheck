@@ -1,3 +1,9 @@
+<div align="center">
+    <img src="https://github.com/DTH-RetroHandheld/imgh/blob/joycheck/IMG_6223.jpg?raw=true">
+    
+_Best app for check your Retro Handheld input_  
+</div>
+
 # JoyCheck (PortMaster)
 
 A controller tester for Linux retro handhelds running **PortMaster**. It shows button, axis, and D-Pad states in real time. Use it for quick checks after remapping or swapping controllers.
