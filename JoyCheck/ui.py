@@ -265,6 +265,20 @@ class UIRenderer:
         for ln in lines:
             self.font.draw_text(ln, x + 8, py)
             py += line_h
+    # === Split methods ===
+    def draw_header(self, width: int, header_h: int, stats: dict):
+        from ui_header import HeaderRenderer
+        HeaderRenderer(self).draw(width, header_h, stats or {})
+    def draw_footer(self, width: int, height: int, footer_h: int):
+        from ui_footer import FooterRenderer
+        FooterRenderer(self).draw(width, height, footer_h)
+    def draw_body(self, width: int, height: int, header_h: int, footer_h: int,
+                  stick_deadzone=0.15, trigger_deadzone=0.05, show_log=False):
+        from ui_body import BodyRenderer
+        BodyRenderer(self).draw(width, height, header_h, footer_h,
+                                stick_deadzone, trigger_deadzone, show_log)
+
+
 
     def draw(self, width: int, height: int, stick_deadzone=0.15, trigger_deadzone=0.05, stats=None, fn_key=False, show_log=False):
         pad = max(8, int(min(width, height) * 0.015))
